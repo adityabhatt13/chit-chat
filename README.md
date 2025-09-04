@@ -63,13 +63,14 @@ cp env .env
 ```
 
 2. Update your database credentials in `.env`:
+```
 database.default.hostname = localhost
 database.default.database = chit_chat
 database.default.username = postgres
 database.default.password = your_password
 database.default.DBDriver = Postgre
 database.default.port = 5432
-
+```
 > ✅ Note: `.env` is ignored by Git to keep sensitive credentials private.
 
 ---
