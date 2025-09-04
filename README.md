@@ -27,11 +27,13 @@ AJAX to fetch new messages periodically (e.g., every 5-10 seconds).
 ## ⚙️ Install Dependencies
 
 1. **Clone the repository**
+```
 git clone <repo-url>
 cd chit-chat
+```
 
 2. **Install PHP dependencies via Composer**
-composer install
+```composer install```
 
 👉 Ensure you have **PHP >= 8.1** and **Composer** installed.  
 
@@ -40,19 +42,25 @@ composer install
 ## 🗄️ Database Setup
 
 1. **Create a PostgreSQL database**
+```
 psql -U postgres
 CREATE DATABASE chit_chat;
 \q
+```
 
 2. **Import the database schema**
+```
 psql -U postgres -d chit_chat -f sql/create_schema.sql
+```
 
 ---
 
 ## ⚡ Environment Configuration
 
 1. Copy environment template
+```
 cp env .env
+```
 
 2. Update your database credentials in `.env`:
 database.default.hostname = localhost
@@ -69,7 +77,9 @@ database.default.port = 5432
 ## ▶️ Running the Application
 
 1. **Using PHP built-in server**
+```
 php spark serve
+```
 
 Open in browser: [http://localhost:8080]
 ---
@@ -86,7 +96,7 @@ Open in browser: [http://localhost:8080]
 ---
 
 ## 📂 Project Structure
-
+```
 chit-chat/
 ├── app/ # CodeIgniter controllers, models, views
 ├── public/ # Frontend assets, index.php
@@ -98,19 +108,28 @@ chit-chat/
 ├── README.md
 ├── .gitignore
 └── vendor/ # Composer dependencies (ignored in git)
-
+```
 ---
 
 ## 🌱 Git Setup
 
 1. Initialize git repository:
+
+```
 git init
+```
 
 2. Add and commit files:
+
+```
 git add .
 git commit -m "Initial commit: CodeIgniter4 chat app setup"
+```
 
 3. Add remote and push:
+
+```
 git branch -M main
 git remote add origin <repo-url>
 git push -u origin main
+```
