@@ -81,6 +81,11 @@ database.default.port = 5432
 ```
 php spark serve
 ```
+For Testing the Chatting Functionality:
+- Run Application on two separate browsers or one browser with two different windows (normal and incognito).
+- Login with different users in both cases.
+
+---
 
 Open in browser: [http://localhost:8080]
 ---
@@ -110,13 +115,6 @@ chit-chat/
 ├── .gitignore
 └── vendor/ # Composer dependencies (ignored in git)
 ```
----
-
-## For Testing the Chatting Functionality
-
-- Run Application on two separate browsers or one browser with two different windows (normal and incognito).
-- Login with different users in both cases.
-
 ---
 
 ## 🌱 Git Setup
