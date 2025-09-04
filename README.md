@@ -112,6 +112,13 @@ chit-chat/
 ```
 ---
 
+## For Testing the Chatting Functionality
+
+- Run Application on two separate browsers or one browser with two different windows (normal and incognito).
+- Login with different users in both cases.
+
+---
+
 ## 🌱 Git Setup
 
 1. Initialize git repository:
